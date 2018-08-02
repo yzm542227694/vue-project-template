@@ -4,6 +4,27 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// mint-ui
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.min.css'
+
+// 懒加载
+import VueLazyload from 'vue-lazyload'
+
+// 引入reset样式
+import 'static/css/reset.css'
+
+// 引入fontawsome图标
+import 'static/css/font-awesome.css'
+
+Vue.use(MintUI)
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: 'dist/error.png',
+  loading: 'dist/loading.gif',
+  attempt: 1
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
