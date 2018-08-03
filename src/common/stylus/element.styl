@@ -1,0 +1,16 @@
+@import './px2rem.styl'
+
+btn($paddingTop = 8, $paddingLeft = 10, $fontSize = 13, $color = white, $background = #F45F22, $borderRadius = 3) {
+  display: inline-block;
+  text-align: center;
+  padding: px2rem($paddingTop) px2rem($paddingLeft);
+  border-radius: px2rem($borderRadius)
+  font-size: px2rem($fontSize)
+  color: $color;
+  background: $background;
+  opacity: 1;
+  text-decoration: none;
+  &:active{
+    opacity: 0.9;
+  }
+}

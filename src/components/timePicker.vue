@@ -3,7 +3,12 @@
     <mt-datetime-picker
       ref="picker"
       :type="type"
-      v-model="pickerValue">
+      v-model="pickerValue"
+      :startDate="startDate"
+      :endDate="endDate"
+      :startHour="startHour"
+      :endHour="endHour"
+      >
     </mt-datetime-picker>
   </div>
 </template>
@@ -27,11 +32,25 @@ export default{
     value: {
       type: Date,
       required: true
+    },
+    startDate: {
+      type: Date
+    },
+    endDate: {
+      type: Date
+    },
+    startHour: {
+      type: Number,
+      default: 0
+    },
+    endHour: {
+      type: Number,
+      default: 23
     }
   },
   data () {
     return {
-      pickerValue: new Date()
+      pickerValue: this.value || new Date()
     }
   },
   methods: {
@@ -40,6 +59,11 @@ export default{
     },
     hide () {
       this.$refs.picker.close()
+    }
+  },
+  watch: {
+    pickerValue () {
+      this.$emit('input', this.pickerValue)
     }
   }
 }

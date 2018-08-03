@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// hotcss
+import 'hotcss'
+
 // mint-ui
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.min.css'
@@ -16,6 +19,9 @@ import 'static/css/reset.css'
 
 // 引入fontawsome图标
 import 'static/css/font-awesome.css'
+
+// 重置mint-ui样式
+import '@/common/stylus/mint-reset.styl'
 
 Vue.use(MintUI)
 Vue.use(VueLazyload, {
