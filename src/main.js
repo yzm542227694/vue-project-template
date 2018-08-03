@@ -9,7 +9,7 @@ import 'hotcss'
 
 // mint-ui
 import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.min.css'
+import '@/common/stylus/mint-ui.styl'
 
 // 懒加载
 import VueLazyload from 'vue-lazyload'
