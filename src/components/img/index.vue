@@ -1,7 +1,7 @@
 <template>
-  <div class="$style.img-wrapper" :style="{'padding-bottom':paddingBottomHeight}">
-    <div class="$style.main-img-wrapper">
-      <img v-lazy="imgSrc" class="$style.main-img" v-if="imgSrc"/>
+  <div class="$style.imgWrapper" :style="{'padding-bottom':paddingBottomHeight}">
+    <div class="$style.mainImgWrapper">
+      <img v-lazy="imgSrc" class="$style.mainImg" v-if="imgSrc"/>
     </div>
   </div>
 </template>

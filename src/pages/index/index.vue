@@ -11,6 +11,20 @@
           打开select选择器
     </div>
     <Select ref="select" :items="selectItems" @change="selectChange"/>
+    <div :class="$style.scrollBoxWrapper">
+      <ScrollBox>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+        <p>123123</p>
+      </ScrollBox>
+    </div>
   </div>
 </template>
 
@@ -20,6 +34,7 @@ import Btn from '@/components/btn'
 import Row from '@/components/row'
 import Banner from '@/components/banner'
 import Select from '@/components/select'
+import ScrollBox from '@/components/scrollBox'
 
 export default{
   data () {
@@ -47,7 +62,8 @@ export default{
     Btn,
     Row,
     Banner,
-    Select
+    Select,
+    ScrollBox
   },
   methods: {
     test2 () {
@@ -65,4 +81,9 @@ export default{
 
 <style lang="stylus" module>
   @import '../../common/stylus/element.styl'
+  .scroll-box-wrapper{
+    height: 5rem;
+    background: darkgreen;
+    color: white;
+  }
 </style>

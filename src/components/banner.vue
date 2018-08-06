@@ -83,7 +83,7 @@ export default{
 </script>
 
 <style lang="stylus" module>
-  .bannerWrapper{
+  .banner-wrapper{
     height: 0;
     transition: height 100ms;
     .bannerImg{

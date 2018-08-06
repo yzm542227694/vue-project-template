@@ -62,7 +62,7 @@ export default{
     opacity: 1
   .opa-leave-active,.opa-enter
     opacity: 0
-  .showImgWrapper
+  .show-img-wrapper
     position: fixed
     left: 0
     top: 0
