@@ -6,9 +6,10 @@
 </script>
 
 <style lang="stylus" module>
+  @import '../../common/stylus/px2rem'
   .split{
     width: 100%
     height: 0
-    border-top: solid 1px #f5f5f5
+    border-top: solid px2rem(1) #f5f5f5
   }
 </style>
